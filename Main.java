@@ -2,7 +2,7 @@ class Main {
   public static void main(String[] args) 
   {
        Cliente cliente =  new Cliente();
-       cliente.nome = "Belmiro";
+       cliente.nome = "Bonitão";
 
        System.out.println("Cliente: " + cliente.nome);
 
