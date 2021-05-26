@@ -6,8 +6,9 @@ public class Operacao{
 
 public void transferir(double v, Conta o, Conta d){
 
-   //o.getNumero();
-   //d.getSaldo();
+
+   o.debitar(v);
+   d.creditar(v);
 
 }
 
