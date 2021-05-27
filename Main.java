@@ -1,4 +1,6 @@
 import entidade.Conta;
+import entidade.Cliente;
+
 
 class Main {
   public static void main(String[] args) 
