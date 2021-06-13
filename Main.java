@@ -1,5 +1,6 @@
 import entidade.Conta;
 import entidade.Cliente;
+import regra.Operacao;
 
 
 class Main {
@@ -26,7 +27,22 @@ class Main {
 
       System.out.println("Conta: " + conta.getNumero() +  "=(R$)"   + conta.getSaldo());
 
+Conta conta2 = new Conta(222222);
+    System.out.println("CONTA2: " + conta2.getNumero() + " = (R$) " + conta2.getSaldo());
 
+		//Operacao obj = new Operacao();
+		//obj.transferir(100, conta, conta2);
+	  
+    Operacao.transferir(100, conta, conta2);
+
+    System.out.println("CONTA2: " + conta2.getNumero() + " = (R$) " + conta2.getSaldo());
+
+
+		System.out.println("teste controle de tipo!");
+
+		for (int x=0; x<20; x++) {
+			conta2.creditar(10);
+		}
 
     System.out.println("fim teste Cliente!");
 

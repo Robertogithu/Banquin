@@ -1,11 +1,15 @@
 package entidade;
 
-public class Cliente{
+public class Cliente {
+	
+	public String nome;
+	
+  public String getNome() {
+    return this.nome;
+  }
 
-public String nome;
-
-public String setNomes;
-
-public String getNomes;
-
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+	
 }
